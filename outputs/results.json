@@ -1,0 +1,379 @@
+{
+  "missing_rows": 165,
+  "incomplete_days": [
+    "2011-01-18",
+    "2011-01-26",
+    "2011-01-27",
+    "2011-02-22",
+    "2011-08-27",
+    "2011-08-28",
+    "2012-10-29",
+    "2012-10-30"
+  ],
+  "yearly_totals": {
+    "2011": 1243103,
+    "2012": 2049576
+  },
+  "hourly_percentiles_by_year": {
+    "2011": {
+      "0.5": 109.0,
+      "0.9": 346.0,
+      "0.95": 420.0,
+      "0.99": 554.0,
+      "max": 651
+    },
+    "2012": {
+      "0.5": 191.0,
+      "0.9": 546.0,
+      "0.95": 662.0,
+      "0.99": 835.0,
+      "max": 977
+    }
+  },
+  "H1": {
+    "n_working_days": 494,
+    "n_nonworking_days": 229,
+    "mean_peak_share_working": 0.5174406359429762,
+    "mean_peak_share_nonworking": 0.26006561779479065,
+    "median_peak_share_working": 0.5249853928217797,
+    "median_peak_share_nonworking": 0.2611839132399458,
+    "U": 112531.0,
+    "p_value": 4.096573928632997e-102,
+    "rank_biserial": 0.989480755971218,
+    "mean_diff_ci95": [
+      0.25034835979393244,
+      0.2641043946167627
+    ],
+    "hodges_lehmann_shift": 0.2620975586623785,
+    "hodges_lehmann_ci95": [
+      0.25723807196312126,
+      0.2679063361104857
+    ],
+    "permutation_p_one_sided": 0.0,
+    "registered_share_at_peak_working": 0.9175893830645575,
+    "registered_share_at_peak_nonworking": 0.7406835824457336,
+    "by_season": [
+      {
+        "season": "Spring",
+        "working_mean": 0.5280132244812348,
+        "nonworking_mean": 0.23957654504881926,
+        "n_working": 116,
+        "n_nonworking": 61,
+        "p_value": 7.775789471400114e-28,
+        "rank_biserial": 0.99576031656303
+      },
+      {
+        "season": "Summer",
+        "working_mean": 0.515403846324032,
+        "nonworking_mean": 0.2787802295787672,
+        "n_working": 128,
+        "n_nonworking": 56,
+        "p_value": 9.553055886780341e-27,
+        "rank_biserial": 0.9871651785714286
+      },
+      {
+        "season": "Fall",
+        "working_mean": 0.511913241280992,
+        "nonworking_mean": 0.2699568166860229,
+        "n_working": 131,
+        "n_nonworking": 55,
+        "p_value": 2.9725809886577348e-27,
+        "rank_biserial": 1.0
+      },
+      {
+        "season": "Winter",
+        "working_mean": 0.5154101947791673,
+        "nonworking_mean": 0.2540620956646818,
+        "n_working": 119,
+        "n_nonworking": 57,
+        "p_value": 5.1415350450344534e-26,
+        "rank_biserial": 0.9778858911985846
+      }
+    ]
+  },
+  "H3_sensitivity_exploratory": [
+    {
+      "threshold_c": 32,
+      "status": "pre-specified",
+      "n_hot": 126,
+      "n_other": 55,
+      "HL_shift": -0.05031538655608869,
+      "MW_p_one_sided": 0.003429767839216283,
+      "mean_diff": -0.0370127706426715,
+      "mean_diff_ci95": [
+        -0.08032056774019278,
+        0.00674055160189345
+      ],
+      "perm_p_one_sided": 0.0321
+    },
+    {
+      "threshold_c": 34,
+      "status": "exploratory (post-hoc)",
+      "n_hot": 72,
+      "n_other": 109,
+      "HL_shift": -0.0780824805717159,
+      "MW_p_one_sided": 2.9845417309751445e-06,
+      "mean_diff": -0.07365869519884027,
+      "mean_diff_ci95": [
+        -0.10705134038067217,
+        -0.03872142897378813
+      ],
+      "perm_p_one_sided": 0.0
+    },
+    {
+      "threshold_c": 35,
+      "status": "exploratory (post-hoc)",
+      "n_hot": 57,
+      "n_other": 124,
+      "HL_shift": -0.09673454176291929,
+      "MW_p_one_sided": 3.628859503351742e-08,
+      "mean_diff": -0.0937084211895074,
+      "mean_diff_ci95": [
+        -0.12826678160226124,
+        -0.05974107859463788
+      ],
+      "perm_p_one_sided": 0.0
+    },
+    {
+      "threshold_c": 36,
+      "status": "exploratory (post-hoc)",
+      "n_hot": 41,
+      "n_other": 140,
+      "HL_shift": -0.1145884002693135,
+      "MW_p_one_sided": 9.834125096811841e-08,
+      "mean_diff": -0.11018921163905404,
+      "mean_diff_ci95": [
+        -0.14867967192782852,
+        -0.07238216901243229
+      ],
+      "perm_p_one_sided": 0.0
+    }
+  ],
+  "H3": {
+    "hot_threshold_c": 32.0,
+    "n_hot_days": 126,
+    "n_other_days": 55,
+    "mean_relative_demand_hot": 0.988753025495321,
+    "mean_relative_demand_other": 1.0257657961379925,
+    "median_relative_demand_hot": 1.0024870700125228,
+    "median_relative_demand_other": 1.0667680031676046,
+    "U": 2588.0,
+    "p_value": 0.003429767839216283,
+    "rank_biserial": 0.25310245310245305,
+    "hodges_lehmann_shift": -0.05031538655608869,
+    "hodges_lehmann_ci95": [
+      -0.08431030673969502,
+      -0.012547564036467836
+    ],
+    "mean_diff": -0.0370127706426715,
+    "permutation_p_one_sided": 0.0321,
+    "mean_diff_ci95": [
+      -0.08032056774019278,
+      0.00674055160189345
+    ],
+    "mean_diff_ci90": [
+      -0.07225049779371126,
+      -0.0007112834288538446
+    ],
+    "spearman_rho_temp_vs_demand": -0.3477136727142265,
+    "spearman_p": 1.6177712347789805e-06,
+    "spearman_rho_temp_vs_humidity": -0.18926510292954915,
+    "spearman_p_temp_humidity": 0.010717832255315049,
+    "monthly_context": [
+      {
+        "year": 2011,
+        "mnth": 5,
+        "mean_hourly_cnt": 182.55510752688173,
+        "mean_temp_c": 23.666478494623657,
+        "share_rain_snow_hours": 0.08736559139784947
+      },
+      {
+        "year": 2011,
+        "mnth": 6,
+        "mean_hourly_cnt": 199.32222222222222,
+        "mean_temp_c": 28.416416666666667,
+        "share_rain_snow_hours": 0.04722222222222222
+      },
+      {
+        "year": 2011,
+        "mnth": 7,
+        "mean_hourly_cnt": 189.9744623655914,
+        "mean_temp_c": 31.10158602150538,
+        "share_rain_snow_hours": 0.020161290322580645
+      },
+      {
+        "year": 2011,
+        "mnth": 8,
+        "mean_hourly_cnt": 186.99179206566347,
+        "mean_temp_c": 28.927715458276335,
+        "share_rain_snow_hours": 0.06566347469220246
+      },
+      {
+        "year": 2011,
+        "mnth": 9,
+        "mean_hourly_cnt": 177.70990237099025,
+        "mean_temp_c": 25.129511854951186,
+        "share_rain_snow_hours": 0.1394700139470014
+      },
+      {
+        "year": 2012,
+        "mnth": 5,
+        "mean_hourly_cnt": 263.25940860215053,
+        "mean_temp_c": 25.106989247311827,
+        "share_rain_snow_hours": 0.10483870967741936
+      },
+      {
+        "year": 2012,
+        "mnth": 6,
+        "mean_hourly_cnt": 281.7083333333333,
+        "mean_temp_c": 27.679555555555552,
+        "share_rain_snow_hours": 0.05277777777777778
+      },
+      {
+        "year": 2012,
+        "mnth": 7,
+        "mean_hourly_cnt": 273.6653225806452,
+        "mean_temp_c": 30.84698924731183,
+        "share_rain_snow_hours": 0.06317204301075269
+      },
+      {
+        "year": 2012,
+        "mnth": 8,
+        "mean_hourly_cnt": 288.31048387096774,
+        "mean_temp_c": 29.183844086021505,
+        "share_rain_snow_hours": 0.05241935483870968
+      },
+      {
+        "year": 2012,
+        "mnth": 9,
+        "mean_hourly_cnt": 303.5736111111111,
+        "mean_temp_c": 25.423416666666668,
+        "share_rain_snow_hours": 0.06111111111111111
+      }
+    ]
+  },
+  "daily_median_ape_pct": {
+    "Seasonal baseline": 11.914342259818255,
+    "HistGradientBoosting": 12.800350115669474,
+    "RandomForest": 13.47333697223265
+  },
+  "best_model": "HistGradientBoosting",
+  "metrics": {
+    "Seasonal baseline": {
+      "MAE": 56.19,
+      "RMSE": 92.62,
+      "R2": 0.82,
+      "Peak-hour MAE": 87.91,
+      "Peak-hour bias (pred-actual)": 46.92
+    },
+    "HistGradientBoosting": {
+      "MAE": 44.52,
+      "RMSE": 70.98,
+      "R2": 0.9,
+      "Peak-hour MAE": 82.76,
+      "Peak-hour bias (pred-actual)": -50.97
+    },
+    "RandomForest": {
+      "MAE": 49.94,
+      "RMSE": 78.93,
+      "R2": 0.87,
+      "Peak-hour MAE": 87.75,
+      "Peak-hour bias (pred-actual)": -49.86
+    }
+  },
+  "fleet_scenarios": {
+    "Observed 2012 p90": {
+      "hourly_demand": 546.0,
+      "trip_minutes": 20,
+      "maintenance_share": 0.1,
+      "spatial_buffer": 2.0,
+      "bikes_in_motion": 182.0,
+      "bikes_positioned": 364.0,
+      "fleet_required": 405
+    },
+    "Observed 2012 p95 (default)": {
+      "hourly_demand": 662.4,
+      "trip_minutes": 20,
+      "maintenance_share": 0.1,
+      "spatial_buffer": 2.0,
+      "bikes_in_motion": 220.8,
+      "bikes_positioned": 441.6,
+      "fleet_required": 491
+    },
+    "Observed 2012 p99": {
+      "hourly_demand": 835.0,
+      "trip_minutes": 20,
+      "maintenance_share": 0.1,
+      "spatial_buffer": 2.0,
+      "bikes_in_motion": 278.3,
+      "bikes_positioned": 556.7,
+      "fleet_required": 619
+    },
+    "Observed max hour": {
+      "hourly_demand": 977.0,
+      "trip_minutes": 20,
+      "maintenance_share": 0.1,
+      "spatial_buffer": 2.0,
+      "bikes_in_motion": 325.7,
+      "bikes_positioned": 651.3,
+      "fleet_required": 724
+    },
+    "Predicted p95, test period": {
+      "hourly_demand": 602.5,
+      "trip_minutes": 20,
+      "maintenance_share": 0.1,
+      "spatial_buffer": 2.0,
+      "bikes_in_motion": 200.8,
+      "bikes_positioned": 401.6,
+      "fleet_required": 447
+    }
+  },
+  "fleet_grid": {
+    "1.5": {
+      "15": 276,
+      "20": 368,
+      "30": 552
+    },
+    "2.0": {
+      "15": 368,
+      "20": 491,
+      "30": 736
+    },
+    "3.0": {
+      "15": 552,
+      "20": 736,
+      "30": 1104
+    }
+  },
+  "pct_in_motion_2000_20min": {
+    "Mean of busiest hour-of-day (working days, 17:00, both years)": 8.754843019372077,
+    "Observed 2012 p95 hour": 11.039166666666672,
+    "Observed maximum hour (2012)": 16.28333333333333
+  },
+  "fleet_forecast_vs_observed": {
+    "ML forecast: max predicted hour (2012-H2)": {
+      "hourly_demand": 827.1,
+      "bikes_in_motion": 275.7,
+      "bikes_positioned": 551.4,
+      "fleet_required": 613.0
+    },
+    "ML forecast: p95 of predicted hours (2012-H2)": {
+      "hourly_demand": 602.5,
+      "bikes_in_motion": 200.8,
+      "bikes_positioned": 401.6,
+      "fleet_required": 447.0
+    },
+    "Observed reference: 2012-H2 p95 (actual)": {
+      "hourly_demand": 702.2,
+      "bikes_in_motion": 234.1,
+      "bikes_positioned": 468.2,
+      "fleet_required": 521.0
+    },
+    "Observed reference: 2012-H2 max (actual)": {
+      "hourly_demand": 977.0,
+      "bikes_in_motion": 325.7,
+      "bikes_positioned": 651.3,
+      "fleet_required": 724.0
+    }
+  }
+}

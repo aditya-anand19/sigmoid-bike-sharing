@@ -1,0 +1,4 @@
+,MAE,RMSE,R2,Peak-hour MAE,Peak-hour bias (pred-actual)
+Seasonal baseline,56.19,92.62,0.82,87.91,46.92
+HistGradientBoosting,44.52,70.98,0.9,82.76,-50.97
+RandomForest,49.94,78.93,0.87,87.75,-49.86

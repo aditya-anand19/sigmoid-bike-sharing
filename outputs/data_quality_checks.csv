@@ -1,0 +1,18 @@
+check,result,note
+hour.csv rows,17379,"17,379 per Readme"
+day.csv rows,731,731 per Readme
+Null values (hour / day),0 / 0,0 expected
+Duplicate rows (hour),0,0 expected
+"Duplicate (date, hr) keys",0,0 expected
+cnt == casual + registered (hour),True,identity
+Hourly sums reconcile with day.csv,True,identity
+Expected hours (731 x 24),17544,
+Missing hour-rows,165,hours absent from the log
+Days with < 24 recorded hours,76,
+Days with < 20 recorded hours,8,flagged as incomplete
+weathersit = 4 rows,3,too rare to model separately
+hum == 0 rows,22,physically implausible -> likely missing
+windspeed == 0 rows,2180,possibly missing / calm
+"Value ranges in [0,1] (temp, atemp, hum, windspeed)",True,
+hr range,0-23,0-23
+cnt min / median / max,1 / 142 / 977,

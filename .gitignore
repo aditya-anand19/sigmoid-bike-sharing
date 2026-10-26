@@ -1,0 +1,16 @@
+# secrets — never commit
+.env
+.env.*
+.streamlit/secrets.toml
+*.key
+
+# Python / tooling
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# private candidate material (must never be in the repo)
+*Gmail*
+*receipt*

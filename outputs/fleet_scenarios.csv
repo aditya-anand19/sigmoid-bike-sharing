@@ -1,0 +1,6 @@
+demand_scenario,hourly_demand,trip_minutes,maintenance_share,spatial_buffer,bikes_in_motion,bikes_positioned,fleet_required
+Observed 2012 p90,546.0,20,0.1,2.0,182.0,364.0,405
+Observed 2012 p95 (default),662.4,20,0.1,2.0,220.8,441.6,491
+Observed 2012 p99,835.0,20,0.1,2.0,278.3,556.7,619
+Observed max hour,977.0,20,0.1,2.0,325.7,651.3,724
+"Predicted p95, test period",602.5,20,0.1,2.0,200.8,401.6,447

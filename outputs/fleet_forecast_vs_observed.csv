@@ -1,0 +1,5 @@
+,hourly_demand,bikes_in_motion,bikes_positioned,fleet_required
+ML forecast: max predicted hour (2012-H2),827.1,275.7,551.4,613.0
+ML forecast: p95 of predicted hours (2012-H2),602.5,200.8,401.6,447.0
+Observed reference: 2012-H2 p95 (actual),702.2,234.1,468.2,521.0
+Observed reference: 2012-H2 max (actual),977.0,325.7,651.3,724.0
