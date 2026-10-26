@@ -22,7 +22,7 @@ was used as a collaborator through a chat workspace that could run Python. This 
 ## What the AI did
 - Read the source files and profiled the data; proposed the analysis plan, hypotheses and options at each checkpoint.
 - Wrote and executed the code: `model_utils.py`, `build_notebook.py` → `analysis.ipynb`, `nl_assistant.py`, `app.py`,
-  `tests/test_prototype.py`, `make_report.py` → `Final_Report.pdf`, README and deployment files.
+  `tests/test_prototype.py`; generated the PDF, Word report and slide deck from the executed outputs; README and deployment files.
 - Ran data-quality checks, hypothesis tests, model training/evaluation and fleet scenarios; produced charts and CSV/JSON results.
 - Pointed out its own risky choices for human decision (e.g. that the 35 °C threshold was chosen after seeing data).
 - Made two errors that Aditya's review caught (items 1-2 above) and corrected them.
@@ -34,7 +34,12 @@ was used as a collaborator through a chat workspace that could run Python. This 
 - `tests/test_prototype.py`: 66 automated checks (tool outputs vs direct pandas/model calls, input validation,
   router intents, grounding of answers, Gemini loop with a mocked client, fallback behaviour, headless Streamlit run).
 - **Not verified by the AI:** live Gemini API calls (Google's API was unreachable from the build environment).
-  Aditya to test locally with his own key.
+  Live verification is done by Aditya on the deployed app (sidebar "Run Gemini diagnostic").
+
+## Deployment (Aditya, guided by the AI)
+- Aditya pushed the project to a private GitHub repo and deployed it on Streamlit Community Cloud:
+  https://sigmoid-bike-sharing-4sbnqpjtvqpqxdpayyzvjz.streamlit.app/
+- Aditya added the Gemini key himself in Streamlit Secrets; the key was never shared in the chat or committed.
 
 ## Stage 5 (AI, at Aditya's instruction)
 - Audit: no secrets, no private correspondence or roll number in the package, no leakage features, 0 notebook errors,

@@ -3,6 +3,8 @@
 Human-led, AI-assisted case study by **Aditya Anand** (NIT Warangal), Sigmoid Data Science Trainee, Round 2.
 Data: UCI Bike Sharing Dataset (Capital Bikeshare, Washington D.C., 2011-2012; Fanaee-T & Gama, 2013).
 
+**Live app:** https://sigmoid-bike-sharing-4sbnqpjtvqpqxdpayyzvjz.streamlit.app/ (Streamlit Community Cloud; if the link asks for sign-in, request access from the author)
+
 **Question.** Riders can't find bikes while bikes sit idle elsewhere. Should the company buy more bikes, or allocate
 existing ones better?
 
@@ -22,7 +24,7 @@ cause: that needs station-level availability and unmet-demand data, which this d
 | B. Hypotheses & testing (H1 commuter peaks, H3 summer heat) | `analysis.ipynb` §B, charts 04-05, `outputs/h3_threshold_sensitivity_EXPLORATORY.csv` |
 | C. Demand model & fleet estimate | `analysis.ipynb` §C, `models/`, `outputs/model_metrics_test_2012H2.csv`, `outputs/fleet_*.csv` |
 | D. Natural-language prototype | `app.py` + `nl_assistant.py` (Gemini function calling + deterministic fallback) |
-| Report | `Final_Report.pdf` |
+| Report | `Final_Report.pdf`, `Final_Report.docx` (Word), `Final_Presentation.pptx` (slides) |
 | Decisions & AI use | `DECISION_LOG.md`, `AI_USAGE.md` |
 
 ## Folder structure
@@ -52,7 +54,11 @@ streamlit run app.py
 Reproduce everything: `python build_notebook.py` (re-executes the notebook, rewrites outputs/ and models/; ~1-2 min).
 Tests: `python tests/test_prototype.py`.
 
-## Deploy on Streamlit Community Cloud
+## Deployment
+Deployed on Streamlit Community Cloud from a private GitHub repo: https://sigmoid-bike-sharing-4sbnqpjtvqpqxdpayyzvjz.streamlit.app/
+The Gemini key is stored only in the app's Streamlit Secrets; without it the app runs in deterministic mode.
+
+## Deploy your own copy on Streamlit Community Cloud
 1. Push this folder to a **private** GitHub repo (no secrets are in it; `.gitignore` excludes `.env` and `.streamlit/secrets.toml`).
 2. share.streamlit.io → Create app → repo, branch `main`, main file `app.py` → Advanced settings: Python 3.13,
    Secrets: `GEMINI_API_KEY = "..."` → Deploy.

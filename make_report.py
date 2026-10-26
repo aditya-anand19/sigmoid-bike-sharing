@@ -122,6 +122,7 @@ story += [p("Sigmoid Case Study Round 2 – Bike-Sharing Demand: More Bikes or B
           p("<b>Role:</b> Data Science Trainee (2026-27), Sigmoid", META),
           p("<b>Data:</b> UCI Bike Sharing Dataset – Capital Bikeshare, Washington D.C., 2011-2012 (hourly and daily)", META),
           p("<b>Approach:</b> Human-led, AI-assisted; code, notebook, prototype and decision log accompany this report", META),
+          p('<b>Live prototype:</b> <link href="https://sigmoid-bike-sharing-4sbnqpjtvqpqxdpayyzvjz.streamlit.app/" color="blue"><u>https://sigmoid-bike-sharing-4sbnqpjtvqpqxdpayyzvjz.streamlit.app/</u></link>', META),
           p("<b>Date:</b> 26 October 2026", META)]
 
 story += [*sec("Executive Summary"), p(
@@ -296,7 +297,7 @@ story += [*sec("7. Natural-language prototype for the operations manager"), p(
     "refusal that names the data needed, rather than an adjacent but misleading number. Each answer shows which function "
     "ran, its arguments and the raw result. <b>Testing:</b> 66 automated checks (function outputs vs direct "
     "pandas/model calls, input validation, routing, grounding, the Gemini loop with a mocked client, fallback, and a "
-    "headless Streamlit run). Live Gemini calls are verified separately on deployment; see README.", B)]
+    "headless Streamlit run). <b>Deployment:</b> live on Streamlit Community Cloud at <link href='https://sigmoid-bike-sharing-4sbnqpjtvqpqxdpayyzvjz.streamlit.app/' color='blue'><u>https://sigmoid-bike-sharing-4sbnqpjtvqpqxdpayyzvjz.streamlit.app/</u></link>, built from a private GitHub repository. The Gemini key is held only in Streamlit Secrets, never in code or the repository; without it the app falls back to deterministic mode and says so on every answer.", B)]
 
 # ------------------------------------------------------------------ 8 recommendation
 story += [*sec("8. Recommendation and validation pilot"), p(
